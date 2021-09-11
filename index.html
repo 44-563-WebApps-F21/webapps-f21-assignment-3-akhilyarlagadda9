@@ -61,10 +61,10 @@
         Hero</a>
     <hr>
     <h2>RECOMMENDED - BARBECUE & BEVERAGES</h2>
- 
+
     <p>The below table indicates the food/drink items that must try: </p>
 
-    <table border="1" >
+    <table border="1">
         <tr>
             <th>Food/Drink</th>
             <th>Location</th>
@@ -86,4 +86,23 @@
             <td align="right">$ 7.50</td>
         </tr>
     </table>
+    <hr>
+    <h2>DATA STRUCTURES</h2>
+    <blockquote cite="https://cp-algorithms.com/data_structures/sparse-table.html">
+        Sparse Table is a data structure, that allows answering range queries. It can answer most range queries in
+        O(logn), but its true power is answering range minimum queries (or equivalent range maximum queries). For those
+        queries it can compute the answer in O(1) time.
+        The only drawback of this data structure is, that it can only be used on immutable arrays. This means, that the
+        array cannot be changed between two queries. If any element in the array changes, the complete data structure
+        has to be recomputed
+    </blockquote>
+    <pre>
+        long long sum = 0;
+        for (int j = K; j >= 0; j--) {
+            if ((1 << j) <= R - L + 1) {
+                sum += st[L][j];
+                L += 1 << j;
+            }
+        }
+    </pre>
 </body>
