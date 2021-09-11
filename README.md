@@ -2,4 +2,4 @@
 Assignment 3 - Basic HTML
 
 "Hosted at" 
-[Link](C:/Users/S545513/Documents/webapps-repos/webapps-f21-assignment-3-akhilyarlagadda9/index.html)
+[Link](https://github.com/44-563-WebApps-F21/webapps-f21-assignment-3-akhilyarlagadda9.git)
